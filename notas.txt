@@ -1,0 +1,22 @@
+#################### SECCION 4 PRIMEROS PASOS #####################
+
+* Para crear un proyecto.
+    -Crear carpeta donde se va instalar los modulos de node, abrir terminal
+    -npm init : inicializar el proyecto
+    -npm install express --save : (--save instala la dep de forma local) lo que hace express (framework) ayuda a las peticiones http post,get,put,delete etc..
+    -npm install mongoose --save : es una empiecie de orm, permite tener funciones y metodos para trabajar con mongo mas facil, no hay que hacer mil querys para hacer algo.
+    -npm install multer --save : libreria para poder subir archivos
+    -npm install --save validator: libreria que permite validar datos
+    -npm install cors --save dependencia para evitar problemas de cors
+    -npm install nodemon --save-dev : (-dev : permite que solo este en dependencias de desarrollo, cuando se suba al server esta libreria no se sube) monitoriza los cambios a nivel codigo en el proyecto
+    
+
+    -npm start para iniciar el server node
+
+   #################### SECCION 5 API REST BLOG ##################### 
+
+   SE REALIZA BAJO LA AARQUITECTURA MVC, 
+   MODELO: SIRVE PARA HACER EL ENLACE A LA BASE DE DATOS INTERACTUAR CON MOONGOSE
+   CONTROLADOR: SE ENCARGA DE RECIBIR LAS PETICIONES (ENDPOINT) APLICA LOGICA DE NEGOCIO Y LLAMA A LOS MODELOS
+   VISTA: EN UNA API NO TENEMOS UNA VISTA COMO TAL 
+   
