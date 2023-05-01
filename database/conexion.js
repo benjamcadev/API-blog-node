@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const conexion = async() => {
 
     try {
-        mongoose.connect("mongodb://localhost:27017/mi_blog");
+        mongoose.connect("mongodb://127.0.0.1:27017/mi_blog");
 
         // Parametors opciones para la conexion
         // useNewUrlPArser: true

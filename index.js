@@ -15,9 +15,18 @@ const puerto = 3900;
 app.use(cors());
 
 //CONVERTIR BODY A OBJETO JS , TODA PETICION QUE LLEGUE SE PARSEA A OBJETO  
-app.use(express.json());
+app.use(express.json()); // Recibir datos con content-type app/json
+app.use(express.urlencoded({extended:true})); // Recibir datos por form-urlencoded
 
 //RUTAS
+const rutas_articulo = require("./rutas/articulo");
+
+// CARGAR LAS RUTAS A LA APP
+
+app.use("/api", rutas_articulo);
+
+
+//RUTAS DE PRUEBA
 app.get("/probando",(req,res) => {
     console.log("Se ha ejecutado el endpoint probando");
 
